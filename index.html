@@ -19,6 +19,10 @@
     <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
+
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="apple-touch-icon" href="/images/icons/192maskable.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body style="display: flex; flex-direction: column; align-items: center">
     <h1>おなか吹田市</h1>
@@ -58,5 +62,11 @@
       </svg>
       ツイート
     </a>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/sw.js");
+      }
+    </script>
   </body>
 </html>
